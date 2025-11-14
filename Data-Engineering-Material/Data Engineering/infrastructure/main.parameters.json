@@ -1,0 +1,49 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "resourceGroupName": {
+      "value": "banking-data-rg"
+    },
+    "location": {
+      "value": "East US"
+    },
+    "environment": {
+      "value": "dev"
+    },
+    "storageAccountName": {
+      "value": "bankingdatalake"
+    },
+    "dataFactoryName": {
+      "value": "banking-data-factory"
+    },
+    "databricksWorkspaceName": {
+      "value": "banking-databricks"
+    },
+    "keyVaultName": {
+      "value": "banking-kv"
+    },
+    "appInsightsName": {
+      "value": "banking-appinsights"
+    },
+    "vnetName": {
+      "value": "banking-vnet"
+    },
+    "databricksSubnetName": {
+      "value": "databricks-subnet"
+    },
+    "privateEndpointSubnetName": {
+      "value": "private-endpoint-subnet"
+    },
+    "tags": {
+      "value": {
+        "Environment": "dev",
+        "Project": "BankingCustomerDataPipeline",
+        "Owner": "DataEngineeringTeam",
+        "CostCenter": "IT-DataEngineering",
+        "Compliance": "Banking",
+        "DataClassification": "Confidential"
+      }
+    }
+  }
+} 
